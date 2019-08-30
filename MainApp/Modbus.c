@@ -46,7 +46,7 @@ uint8_t Rx_Data_Available = false;
 /*****************************************************************************/
 volatile uint16_t modbusTimerValue = 0;
 volatile uint8_t modbusReceiveCounter = 0;// Collected data number
-volatile uint8_t modbusReceiveBuffer[CONFIG_MB_RTU_SLAVE_BUFFER_SIZE];// Buffer to collect data from hardware
+xdata volatile uint8_t modbusReceiveBuffer[CONFIG_MB_RTU_SLAVE_BUFFER_SIZE];// Buffer to collect data from hardware
 xdata volatile int16_t NVRAM[CONFIG_NVRAM_SIZE];
 /*****************************************************************************/
 void modbusCrc16(const uint8_t Data, uint32_t* CRC){

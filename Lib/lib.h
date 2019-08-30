@@ -7,7 +7,7 @@
 #define CONFIG_MB_RTU_SLAVE_TICK							1000//1KHz
 #define CONFIG_MB_RTU_SLAVE_BUFFER_SIZE						64
 #define CONFIG_UART_BAUDRATE     							115200// UART0 Baudrate (bps)
-#define CONFIG_ADC_SAMPLE_LENGTH							64
+#define CONFIG_ADC_SAMPLE_LENGTH							32
 #define CONFIG_NVRAM_SIZE									16
 #define CONFIG_MB_RTU_SLAVE_TIMEOUT							50
 #define CONFIG_MB_RTU_SLAVE_ADDRESS							0x01
@@ -23,7 +23,7 @@
 #ifdef C8051F350
 #include "C8051F350_defs.h"
 #define CONFIG_MDCLK        								2457600// Modulator Clock (Hz)
-#define CONFIG_OWR          								10// desired Output Word Rate in Hz
+#define CONFIG_OWR          								1// desired Output Word Rate in Hz
 #define CONFIG_VREF         								2444UL// Internal VREF (x 10^-2 V)
 //#define CONFIG_SYSCLK										22118400//SYSCLK frequency (Hz)
 #define CONFIG_SYSCLK										24500000//SYSCLK frequency (Hz)
